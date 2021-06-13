@@ -1,11 +1,11 @@
 # Atividade 006: Programação Funcional
 Faça os programas abaixo utilizando as linguagens:
-  - LISP (https://common-lisp.net/downloads)
-  - Haskell ( https://www.haskell.org/downloads/ )
-  - Erlang ( https://www.erlang.org/ )
+  * LISP (https://common-lisp.net/downloads)
+  * Haskell ( https://www.haskell.org/downloads/ )
+  * Erlang ( https://www.erlang.org/ )
 
 
-1. fatorial: recebe um numero natural e retorna o seu fatorial.
+- 1. fatorial: recebe um numero natural e retorna o seu fatorial.
 
 
 - 2. fibonacci: recebe um número inteiro positivo e retorna o n-ésimo elemento da seqüência de Fibonacci (especificar no programa se sua seqüência começa com 0 e 1 ou com 1 e 1)
