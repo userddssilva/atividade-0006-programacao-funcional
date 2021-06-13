@@ -5,7 +5,7 @@ Faça os programas abaixo utilizando as linguagens:
   - Erlang ( https://www.erlang.org/ )
 
 
-- 1. fatorial: recebe um numero natural e retorna o seu fatorial.
+1. fatorial: recebe um numero natural e retorna o seu fatorial.
 
 
 - 2. fibonacci: recebe um número inteiro positivo e retorna o n-ésimo elemento da seqüência de Fibonacci (especificar no programa se sua seqüência começa com 0 e 1 ou com 1 e 1)
@@ -54,4 +54,5 @@ Ex.: compactar [2,2,2,3,4,4,2,9,5,2,4,5,5,5] = [[3,2],[3],[2,4],[2],[9],[5],[2],
 
 
 > Equipe: equipe escolhida em sala de aula
+> 
 > Entregável: códigos-fontes no github
