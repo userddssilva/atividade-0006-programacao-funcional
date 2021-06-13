@@ -1,8 +1,8 @@
 # Atividade 006: Programação Funcional
 
 > Dayvson Silva ddss.snf19@uea.edu.br <br />
-> Fernanda Lopes <br />
-> Gabriel <br />
+> Fernanda Lopes fpl.snf19@uea.edu.br<br />
+> Gabriel Alexander gafdlt.snf19@uea.edu.br<br />
 
 Faça os programas abaixo utilizando as linguagens: <br/>
 LISP (https://common-lisp.net/downloads) <br/>
