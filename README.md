@@ -1,8 +1,8 @@
 # Atividade 006: Programação Funcional
-Faça os programas abaixo utilizando as linguagens:
+Faça os programas abaixo utilizando as linguagens: <br/>
 LISP (https://common-lisp.net/downloads) <br/>
-Haskell ( https://www.haskell.org/downloads/ )
-Erlang ( https://www.erlang.org/ )
+Haskell ( https://www.haskell.org/downloads/ ) <br />
+Erlang ( https://www.erlang.org/ ) <br/>
 
 
 - 1. fatorial: recebe um numero natural e retorna o seu fatorial.
