@@ -1,4 +1,9 @@
 # Atividade 006: Programação Funcional
+
+> Dayvson Silva ddss.snf19@uea.edu.br <br />
+> Fernanda Lopes <br />
+> Gabriel <br />
+
 Faça os programas abaixo utilizando as linguagens: <br/>
 LISP (https://common-lisp.net/downloads) <br/>
 Haskell ( https://www.haskell.org/downloads/ ) <br />
@@ -49,8 +54,3 @@ Ex.: compactar [2,2,2,3,4,4,2,9,5,2,4,5,5,5] = [[3,2],[3],[2,4],[2],[9],[5],[2],
 
 
 - 10. Refaça a função fatorial utilizando recursão em cauda ( https://www.ic.unicamp.br/~oliveira/doc/mc102_2s2004/Aula19.pdf ) . Qual a diferença?
-
-
-> Equipe: equipe escolhida em sala de aula
-> 
-> Entregável: códigos-fontes no github
