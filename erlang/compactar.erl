@@ -1,41 +1,32 @@
 -module(compactar).
--import(sets, [from_list/1, to_list/1]).
--import(lists, [umerge/2]).
--export([compacta/1, count/2, isomorphic/2, extract_ones/1]).
+-export([compactar/1, count/2, compct/2, extractones/1, removedups/1]).
 
 %* count number ocurrences
-count(Needle, Haystack) -> count(Needle, Haystack, 0).
+count(X, L) -> count(X, L, 0).
 count(_, [], Count) -> Count;
-count(X, [X|Rest], Count) -> count(X, Rest, Count+1);
-count(X, [_|Rest], Count) -> count(X, Rest, Count).
+count(X, [X|T], Count) -> count(X, T, Count+1);
+count(X, [_|T], Count) -> count(X, T, Count).
 
 %* remove repetitives elements
-remove_dups([]) -> [];
-remove_dups([H|T]) -> [H | [X || X <- remove_dups(T), X /= H]].
+removedups([]) -> [];
+removedups([H|T]) -> [H | [X || X <- removedups(T), X /= H]].
 
 %* remove number ocurrences if is 1
-one([H|T]) ->
-    if 
-    H =:= 1-> T;                %* if number ocurrences is 1 return N
-    true -> [H|T]               %* else [N,M] 
+choiceitem([H|T]) ->
+    case H =:= 1 of 
+        true -> T;                %* if number ocurrences is 1 return N
+        false -> [H|T]            %* else [N,M] 
     end.
 
-extract_ones([H|T]) -> 
-    [one(H)|extract_ones(T)];
-
-extract_ones([]) -> 
-    [].
-
-%* compacta list
-compacta(List) ->
-    L = remove_dups(List),
-    L2 = isomorphic(L, List),
-    extract_ones(L2).
+extractones([H|T]) -> [choiceitem(H)|extractones(T)];
+extractones([]) -> [].
 
 %* run each item from list
-isomorphic([X|T], List) ->
-    %[something(X)|isomorphic(T)];
-    [[count(X, List), X]|isomorphic(T, List)];
+compct([X|T], List) -> [[count(X, List), X]|compct(T, List)];
+compct([], _) -> [].
 
-isomorphic([], _) ->
-    [].
+%* compacta list
+compactar(List) ->
+    L = removedups(List),
+    L2 = compct(L, List),
+    extractones(L2).
